@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-06-05 16:10:38
+# 配置生成日期：2025-06-05 16:16:01
 
 mixed-port: 7890
 allow-lan: false
@@ -50,76 +50,110 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: YGKKK2504
+  - name: vl-reality-ip-172-31-42-241
     type: vless
-    server: 104.20.0.0
-    port: 80
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    server: 13.208.191.78
+    port: 47434
+    uuid: 7cbbe892-113e-4e75-9546-7c2ed79f9d29
+    network: tcp
+    tls: true
+    servername: www.yahoo.com
+    flow: xtls-rprx-vision
+    skip-cert-verify: true
+    client-fingerprint: chrome
+    reality-opts:
+      public-key: Kz4yPAvZPkw23NDTBZq9CXIZ5dOSWEeC9MxghQ08e1w
+      short-id: 1e4f8565
     ip-version: dual
-  - name: YGKKK2504-2
-    type: vless
-    server: 104.22.0.0
-    port: 8880
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-  - name: YGKKK2504-3
-    type: vless
-    server: 104.19.0.0
-    port: 80
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    udp: true
+  - name: vm-argo-ip-172-31-42-241_1
+    type: vmess
+    server: www.visa.com.sg
+    port: 8443
+    uuid: 7cbbe892-113e-4e75-9546-7c2ed79f9d29
     network: ws
     tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    servername: employee-worth-achieved-other.trycloudflare.com
     skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
-  - name: YGKKK2504-4
-    type: vless
-    server: 172.67.0.0
-    port: 2052
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: vm-argo-ip-172-31-42-241_2
+    type: vmess
+    server: www.visa.com.sg
+    port: 8443
+    uuid: 7cbbe892-113e-4e75-9546-7c2ed79f9d29
+    network: ws
+    tls: true
+    servername: ygkkkaws.718933.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: vm-ws-ip-172-31-42-241
+    type: vmess
+    server: aws.718933.xyz
+    port: 8880
+    uuid: 7cbbe892-113e-4e75-9546-7c2ed79f9d29
     network: ws
     tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
+    udp: true
+    alterId: 0
+    cipher: auto
+  - name: hy2-ip-172-31-42-241
+    type: hysteria2
+    server: 13.208.191.78
+    port: 63646
+    tls: true
+    password: 7cbbe892-113e-4e75-9546-7c2ed79f9d29
+    sni: www.bing.com
+    alpn:
+      - h3
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+    udp: true
+  - name: tu5-ip-172-31-42-241
+    type: tuic
+    server: 13.208.191.78
+    port: 41824
+    uuid: 7cbbe892-113e-4e75-9546-7c2ed79f9d29
+    tls: true
+    password: 7cbbe892-113e-4e75-9546-7c2ed79f9d29
+    sni: www.bing.com
+    alpn:
+      - h3
+    skip-cert-verify: true
+    ip-version: dual
+    udp: true
+    congestion-controller: bbr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
+      - vl-reality-ip-172-31-42-241
+      - vm-argo-ip-172-31-42-241_1
+      - vm-argo-ip-172-31-42-241_2
+      - vm-ws-ip-172-31-42-241
+      - hy2-ip-172-31-42-241
+      - tu5-ip-172-31-42-241
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
     proxies:
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
+      - vl-reality-ip-172-31-42-241
+      - vm-argo-ip-172-31-42-241_1
+      - vm-argo-ip-172-31-42-241_2
+      - vm-ws-ip-172-31-42-241
+      - hy2-ip-172-31-42-241
+      - tu5-ip-172-31-42-241
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -137,10 +171,12 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
+      - vl-reality-ip-172-31-42-241
+      - vm-argo-ip-172-31-42-241_1
+      - vm-argo-ip-172-31-42-241_2
+      - vm-ws-ip-172-31-42-241
+      - hy2-ip-172-31-42-241
+      - tu5-ip-172-31-42-241
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
