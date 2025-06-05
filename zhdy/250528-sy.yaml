@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-06-05 17:13:16
+# 配置生成日期：2025-06-05 17:15:52
 
 mixed-port: 7890
 allow-lan: false
@@ -180,7 +180,7 @@ proxies:
     ip-version: dual
     udp: true
     congestion-controller: bbr
-  - name: YGKKK2504
+  - name: YGKKK2504_1
     type: vless
     server: 104.20.0.0
     port: 80
@@ -193,7 +193,7 @@ proxies:
         host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
     udp: true
-  - name: YGKKK2504-2
+  - name: YGKKK2504-2_1
     type: vless
     server: 104.22.0.0
     port: 8880
@@ -206,7 +206,7 @@ proxies:
         host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
     udp: true
-  - name: YGKKK2504-4
+  - name: YGKKK2504-4_1
     type: vless
     server: 172.67.0.0
     port: 2052
@@ -437,6 +437,135 @@ proxies:
     ip-version: dual
     udp: true
     congestion-controller: bbr
+  - name: YGKKK2504_2
+    type: vless
+    server: 104.20.0.0
+    port: 80
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-2_2
+    type: vless
+    server: 104.22.0.0
+    port: 8880
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-3
+    type: vless
+    server: 104.19.0.0
+    port: 80
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: true
+    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-4_2
+    type: vless
+    server: 172.67.0.0
+    port: 2052
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: false
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-5
+    type: vless
+    server: 104.19.0.0
+    port: 2095
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: true
+    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-6
+    type: vless
+    server: 104.20.0.0
+    port: 2052
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: true
+    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-7
+    type: vless
+    server: 162.159.0.0
+    port: 2082
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: true
+    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-8
+    type: vless
+    server: 104.21.0.0
+    port: 80
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: true
+    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
+  - name: YGKKK2504-9
+    type: vless
+    server: 104.21.0.0
+    port: 8880
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: true
+    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+    udp: true
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -453,9 +582,9 @@ proxy-groups:
       - tu5-instance-20250520-2213_1
       - tu5-instance-20241127-1317_1
       - tu5-instance-20240228-1524_1
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-4
+      - YGKKK2504_1
+      - YGKKK2504-2_1
+      - YGKKK2504-4_1
       - vl-reality-instance-20240228-1524
       - vm-ws-instance-20240228-1524
       - hy2-instance-20240228-1524_2
@@ -472,6 +601,15 @@ proxy-groups:
       - vm-ws-instance-20250520-2213
       - hy2-instance-20250520-2213_2
       - tu5-instance-20250520-2213_2
+      - YGKKK2504_2
+      - YGKKK2504-2_2
+      - YGKKK2504-3
+      - YGKKK2504-4_2
+      - YGKKK2504-5
+      - YGKKK2504-6
+      - YGKKK2504-7
+      - YGKKK2504-8
+      - YGKKK2504-9
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -488,9 +626,9 @@ proxy-groups:
       - tu5-instance-20250520-2213_1
       - tu5-instance-20241127-1317_1
       - tu5-instance-20240228-1524_1
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-4
+      - YGKKK2504_1
+      - YGKKK2504-2_1
+      - YGKKK2504-4_1
       - vl-reality-instance-20240228-1524
       - vm-ws-instance-20240228-1524
       - hy2-instance-20240228-1524_2
@@ -507,6 +645,15 @@ proxy-groups:
       - vm-ws-instance-20250520-2213
       - hy2-instance-20250520-2213_2
       - tu5-instance-20250520-2213_2
+      - YGKKK2504_2
+      - YGKKK2504-2_2
+      - YGKKK2504-3
+      - YGKKK2504-4_2
+      - YGKKK2504-5
+      - YGKKK2504-6
+      - YGKKK2504-7
+      - YGKKK2504-8
+      - YGKKK2504-9
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -534,9 +681,9 @@ proxy-groups:
       - tu5-instance-20250520-2213_1
       - tu5-instance-20241127-1317_1
       - tu5-instance-20240228-1524_1
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-4
+      - YGKKK2504_1
+      - YGKKK2504-2_1
+      - YGKKK2504-4_1
       - vl-reality-instance-20240228-1524
       - vm-ws-instance-20240228-1524
       - hy2-instance-20240228-1524_2
@@ -553,6 +700,15 @@ proxy-groups:
       - vm-ws-instance-20250520-2213
       - hy2-instance-20250520-2213_2
       - tu5-instance-20250520-2213_2
+      - YGKKK2504_2
+      - YGKKK2504-2_2
+      - YGKKK2504-3
+      - YGKKK2504-4_2
+      - YGKKK2504-5
+      - YGKKK2504-6
+      - YGKKK2504-7
+      - YGKKK2504-8
+      - YGKKK2504-9
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
