@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-06-09 13:38:50
+# 配置生成日期：2025-06-09 13:40:06
 
 mixed-port: 7890
 allow-lan: false
@@ -185,22 +185,6 @@ proxies:
     skip-cert-verify: true
     ip-version: dual
     congestion-controller: bbr
-  - name: vl-reality-instance-20241127-1317
-    type: vless
-    server: 129.153.126.254
-    port: 23980
-    uuid: 337644fd-fb59-445a-9a65-33a5a3163fa1
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: jr2EVEeNQvFXDcOn5_sLUiAlck6O38G25Z_AV53Msnw
-      short-id: 9588288b
-    ip-version: dual
-    udp: true
   - name: vm-ws-instance-20241127-1317
     type: vmess
     server: 129.153.126.254
@@ -211,22 +195,6 @@ proxies:
     ip-version: dual
     alterId: 0
     cipher: auto
-  - name: vl-reality-instance-20240228-1524
-    type: vless
-    server: 158.101.28.51
-    port: 26692
-    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: wO9F-op0VS-c9_i0XAxV0xb8aW4JcIed7cvHr5QLKQA
-      short-id: 2ed180ed
-    ip-version: dual
-    udp: true
   - name: vm-ws-instance-20240228-1524
     type: vmess
     server: 158.101.28.51
@@ -237,22 +205,6 @@ proxies:
     ip-version: dual
     alterId: 0
     cipher: auto
-  - name: vl-reality-instance-20250520-2213
-    type: vless
-    server: 129.153.207.22
-    port: 65238
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: W8koBeSHEoPIC9mtDI1BB0I9N88ycEyqs14A5jbaP1I
-      short-id: 8da51536
-    ip-version: dual
-    udp: true
   - name: vm-ws-instance-20250520-2213
     type: vmess
     server: 129.153.207.22
@@ -263,22 +215,6 @@ proxies:
     ip-version: dual
     alterId: 0
     cipher: auto
-  - name: vl-reality-instance-20241127-1424
-    type: vless
-    server: 129.153.207.7
-    port: 54689
-    uuid: 3d2131ea-cb49-4450-9e14-458afe3f5711
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4bWV2JBvep0n-CoE7rVosZWwyk6b4hFnoCswDexcjnk
-      short-id: e9f6c3fe
-    ip-version: dual
-    udp: true
   - name: vm-ws-2564
     type: vmess
     server: 142.91.104.30
@@ -289,72 +225,6 @@ proxies:
     ip-version: dual
     alterId: 0
     cipher: auto
-  - name: vl-reality-2564
-    type: vless
-    server: 142.91.104.30
-    port: 14283
-    uuid: c0ab87a9-4269-4e2a-8111-b5777e712fb1
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: rgmPBYmE6Vx0tFCQXiGCjpzF9Eeui20YMWA4FubOFk0
-      short-id: 6b9cbbc8
-    ip-version: dual
-    udp: true
-  - name: YGKKK2504
-    type: vless
-    server: 104.20.0.0
-    port: 80
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-  - name: YGKKK2504-2
-    type: vless
-    server: 104.22.0.0
-    port: 8880
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-  - name: YGKKK2504-3
-    type: vless
-    server: 104.19.0.0
-    port: 80
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-  - name: YGKKK2504-4
-    type: vless
-    server: 172.67.0.0
-    port: 2052
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -372,19 +242,10 @@ proxy-groups:
       - tu5-instance-20241127-1317
       - tu5-instance-20240228-1524
       - tu5-2564
-      - vl-reality-instance-20241127-1317
       - vm-ws-instance-20241127-1317
-      - vl-reality-instance-20240228-1524
       - vm-ws-instance-20240228-1524
-      - vl-reality-instance-20250520-2213
       - vm-ws-instance-20250520-2213
-      - vl-reality-instance-20241127-1424
       - vm-ws-2564
-      - vl-reality-2564
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -402,19 +263,10 @@ proxy-groups:
       - tu5-instance-20241127-1317
       - tu5-instance-20240228-1524
       - tu5-2564
-      - vl-reality-instance-20241127-1317
       - vm-ws-instance-20241127-1317
-      - vl-reality-instance-20240228-1524
       - vm-ws-instance-20240228-1524
-      - vl-reality-instance-20250520-2213
       - vm-ws-instance-20250520-2213
-      - vl-reality-instance-20241127-1424
       - vm-ws-2564
-      - vl-reality-2564
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -443,19 +295,10 @@ proxy-groups:
       - tu5-instance-20241127-1317
       - tu5-instance-20240228-1524
       - tu5-2564
-      - vl-reality-instance-20241127-1317
       - vm-ws-instance-20241127-1317
-      - vl-reality-instance-20240228-1524
       - vm-ws-instance-20240228-1524
-      - vl-reality-instance-20250520-2213
       - vm-ws-instance-20250520-2213
-      - vl-reality-instance-20241127-1424
       - vm-ws-2564
-      - vl-reality-2564
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
