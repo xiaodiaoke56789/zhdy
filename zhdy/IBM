@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-06-06 18:12:17
+# 配置生成日期：2025-06-09 11:06:43
 
 mixed-port: 7890
 allow-lan: false
@@ -50,130 +50,6 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: ibm-US-Marist_University-优选-cloudflare.182682.xyz
-    type: vmess
-    server: cloudflare.182682.xyz
-    port: 443
-    uuid: 21f38e30-17dc-4995-9729-65c03baeaa4e
-    network: ws
-    tls: true
-    servername: ide-commitments-opponent-billy.trycloudflare.com
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: none
-  - name: ibm-US-Marist_University-优选-joeyblog.net
-    type: vmess
-    server: joeyblog.net
-    port: 443
-    uuid: 21f38e30-17dc-4995-9729-65c03baeaa4e
-    network: ws
-    tls: true
-    servername: ide-commitments-opponent-billy.trycloudflare.com
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: none
-  - name: ibm-US-Marist_University
-    type: vless
-    server: 148.100.108.105
-    port: 8008
-    uuid: 21f38e30-17dc-4995-9729-65c03baeaa4e
-    network: tcp
-    tls: true
-    servername: www.nazhumi.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: DIsgd8zAcwvN1CkrkMURCMSqOsbg5q-tGvJeukMpXkY
-    ip-version: dual
-    udp: true
-  - name: vm-ws-2564
-    type: vmess
-    server: 142.91.104.30
-    port: 17891
-    uuid: c0ab87a9-4269-4e2a-8111-b5777e712fb1
-    network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vl-reality-2564
-    type: vless
-    server: 142.91.104.30
-    port: 14283
-    uuid: c0ab87a9-4269-4e2a-8111-b5777e712fb1
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: rgmPBYmE6Vx0tFCQXiGCjpzF9Eeui20YMWA4FubOFk0
-      short-id: 6b9cbbc8
-    ip-version: dual
-    udp: true
-  - name: hy2-2564
-    type: hysteria2
-    server: 142.91.104.30
-    port: 20004
-    tls: true
-    password: c0ab87a9-4269-4e2a-8111-b5777e712fb1
-    sni: www.bing.com
-    alpn:
-      - h3
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-    udp: true
-  - name: tu5-2564
-    type: tuic
-    server: 142.91.104.30
-    port: 20005
-    uuid: c0ab87a9-4269-4e2a-8111-b5777e712fb1
-    tls: true
-    password: c0ab87a9-4269-4e2a-8111-b5777e712fb1
-    sni: www.bing.com
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    congestion-controller: bbr
-  - name: vl-reality-instance-20240228-1524
-    type: vless
-    server: 158.101.28.51
-    port: 26692
-    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: wO9F-op0VS-c9_i0XAxV0xb8aW4JcIed7cvHr5QLKQA
-      short-id: 2ed180ed
-    ip-version: dual
-    udp: true
-  - name: vm-ws-instance-20240228-1524
-    type: vmess
-    server: 158.101.28.51
-    port: 8080
-    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
-    network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
   - name: hy2-instance-20240228-1524
     type: hysteria2
     server: 158.101.28.51
@@ -186,49 +62,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
-    ports: '36584'
-  - name: tu5-instance-20240228-1524
-    type: tuic
-    server: 158.101.28.51
-    port: 23320
-    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
-    tls: true
-    password: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
-    sni: www.bing.com
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    congestion-controller: bbr
-  - name: vl-reality-instance-20241127-1317
-    type: vless
-    server: 129.153.126.254
-    port: 23980
-    uuid: 337644fd-fb59-445a-9a65-33a5a3163fa1
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: jr2EVEeNQvFXDcOn5_sLUiAlck6O38G25Z_AV53Msnw
-      short-id: 9588288b
-    ip-version: dual
-    udp: true
-  - name: vm-ws-instance-20241127-1317
-    type: vmess
-    server: 129.153.126.254
-    port: 2095
-    uuid: 337644fd-fb59-445a-9a65-33a5a3163fa1
-    network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
   - name: hy2-instance-20241127-1317
     type: hysteria2
     server: 129.153.126.254
@@ -241,49 +74,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
-    ports: '34638'
-  - name: tu5-instance-20241127-1317
-    type: tuic
-    server: 129.153.126.254
-    port: 54911
-    uuid: 337644fd-fb59-445a-9a65-33a5a3163fa1
-    tls: true
-    password: 337644fd-fb59-445a-9a65-33a5a3163fa1
-    sni: www.bing.com
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    congestion-controller: bbr
-  - name: vl-reality-instance-20241127-1424
-    type: vless
-    server: 129.153.207.7
-    port: 54689
-    uuid: 3d2131ea-cb49-4450-9e14-458afe3f5711
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: 4bWV2JBvep0n-CoE7rVosZWwyk6b4hFnoCswDexcjnk
-      short-id: e9f6c3fe
-    ip-version: dual
-    udp: true
-  - name: vm-ws-instance-20241127-1424
-    type: vmess
-    server: 129.153.207.7
-    port: 2095
-    uuid: 3d2131ea-cb49-4450-9e14-458afe3f5711
-    network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
   - name: hy2-instance-20241127-1424
     type: hysteria2
     server: 129.153.207.7
@@ -296,48 +86,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
-  - name: tu5-instance-20241127-1424
-    type: tuic
-    server: 129.153.207.7
-    port: 57402
-    uuid: 3d2131ea-cb49-4450-9e14-458afe3f5711
-    tls: true
-    password: 3d2131ea-cb49-4450-9e14-458afe3f5711
-    sni: www.bing.com
-    alpn:
-      - h3
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    congestion-controller: bbr
-  - name: vl-reality-instance-20250520-2213
-    type: vless
-    server: 129.153.207.22
-    port: 65238
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: W8koBeSHEoPIC9mtDI1BB0I9N88ycEyqs14A5jbaP1I
-      short-id: 8da51536
-    ip-version: dual
-    udp: true
-  - name: vm-ws-instance-20250520-2213
-    type: vmess
-    server: 129.153.207.22
-    port: 8880
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
   - name: hy2-instance-20250520-2213
     type: hysteria2
     server: 129.153.207.22
@@ -350,7 +98,41 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
+  - name: hy2-2564
+    type: hysteria2
+    server: 142.91.104.30
+    port: 20004
+    tls: true
+    password: c0ab87a9-4269-4e2a-8111-b5777e712fb1
+    sni: www.bing.com
+    alpn:
+      - h3
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: freecloud2504
+    type: hysteria2
+    server: 2604:abc0:103:415:a1::2c7
+    port: 40443
+    tls: true
+    password: yrpQIPpOGpSlSqzR7hmWb99p
+    sni: bing.com
+    skip-cert-verify: true
+    fast-open: false
+    ip-version: dual
+  - name: tu5-instance-20241127-1424
+    type: tuic
+    server: 129.153.207.7
+    port: 57402
+    uuid: 3d2131ea-cb49-4450-9e14-458afe3f5711
+    tls: true
+    password: 3d2131ea-cb49-4450-9e14-458afe3f5711
+    sni: www.bing.com
+    alpn:
+      - h3
+    skip-cert-verify: true
+    ip-version: dual
+    congestion-controller: bbr
   - name: tu5-instance-20250520-2213
     type: tuic
     server: 129.153.207.22
@@ -363,287 +145,80 @@ proxies:
       - h3
     skip-cert-verify: true
     ip-version: dual
-    udp: true
     congestion-controller: bbr
-  - name: xhttpluo250524-ghcdxilb-clone_1
-    type: vless
-    server: xhb.akg.us.kg
-    port: 443
-    uuid: a75d7788-ee79-4ed6-8d08-efb5dd196139
-    network: xhttp
-    tls: false
-    ip-version: dual
-    udp: true
-  - name: xhttpluo250524-ghcdxilb-clone_2
-    type: vless
-    server: xh.718933.xyz
-    port: 443
-    uuid: a75d7788-ee79-4ed6-8d08-efb5dd196139
-    network: xhttp
-    tls: false
-    ip-version: dual
-    udp: true
-  - name: xhttpluo250524-ghcdxilb_1
-    type: vless
-    server: 129.153.207.22
-    port: 6666
-    uuid: a75d7788-ee79-4ed6-8d08-efb5dd196139
-    network: xhttp
-    tls: false
-    ip-version: dual
-    udp: true
-  - name: xhttpluo250524-ghcdxilb_2
-    type: vless
-    server: xh.718933.xyz
-    port: 443
-    uuid: a75d7788-ee79-4ed6-8d08-efb5dd196139
-    network: xhttp
-    tls: false
-    ip-version: dual
-    udp: true
-  - name: xhttp250524-7d72olmj
-    type: vless
-    server: 129.153.207.22
-    port: 443
-    uuid: 85cc706e-10a8-4b97-8ff1-9d82ab73537e
-    network: xhttp
+  - name: tu5-instance-20241127-1317
+    type: tuic
+    server: 129.153.126.254
+    port: 54911
+    uuid: 337644fd-fb59-445a-9a65-33a5a3163fa1
     tls: true
-    servername: yahoo.com
+    password: 337644fd-fb59-445a-9a65-33a5a3163fa1
+    sni: www.bing.com
+    alpn:
+      - h3
     skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: YiiFQIbjzpPwVt7JIuKwQrYJu6Z6dbKqa_wEsxeYMng
-      short-id: b46a
     ip-version: dual
-    udp: true
-  - name: YGKKK2504
-    type: vless
-    server: 104.20.0.0
-    port: 80
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-    udp: true
-  - name: YGKKK2504-2
-    type: vless
-    server: 104.22.0.0
-    port: 8880
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-    udp: true
-  - name: YGKKK2504-3
-    type: vless
-    server: 104.19.0.0
-    port: 80
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
+    congestion-controller: bbr
+  - name: tu5-instance-20240228-1524
+    type: tuic
+    server: 158.101.28.51
+    port: 23320
+    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
     tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    password: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
+    sni: www.bing.com
+    alpn:
+      - h3
     skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
-    udp: true
-  - name: YGKKK2504-4
-    type: vless
-    server: 172.67.0.0
-    port: 2052
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: false
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-    udp: true
-  - name: YGKKK2504-5
-    type: vless
-    server: 104.19.0.0
-    port: 2095
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
+    congestion-controller: bbr
+  - name: tu5-2564
+    type: tuic
+    server: 142.91.104.30
+    port: 20005
+    uuid: c0ab87a9-4269-4e2a-8111-b5777e712fb1
     tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    password: c0ab87a9-4269-4e2a-8111-b5777e712fb1
+    sni: www.bing.com
+    alpn:
+      - h3
     skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
-    udp: true
-  - name: YGKKK2504-6
-    type: vless
-    server: 104.20.0.0
-    port: 2052
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-    udp: true
-  - name: YGKKK2504-7
-    type: vless
-    server: 162.159.0.0
-    port: 2082
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-    udp: true
-  - name: YGKKK2504-8
-    type: vless
-    server: 104.21.0.0
-    port: 80
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-    udp: true
-  - name: YGKKK2504-9
-    type: vless
-    server: 104.21.0.0
-    port: 8880
-    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
-    network: ws
-    tls: true
-    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
-    skip-cert-verify: true
-    ws-opts:
-      path: /
-      headers:
-        host: gentle-star-853b.xiaodiaoke56789.workers.dev
-    ip-version: dual
-    udp: true
-  - name: freecloud2504
-    type: hysteria2
-    server: 2604:abc0:103:415:a1::2c7
-    port: 40443
-    tls: true
-    password: yrpQIPpOGpSlSqzR7hmWb99p
-    sni: bing.com
-    skip-cert-verify: true
-    fast-open: false
-    ip-version: dual
-    udp: true
+    congestion-controller: bbr
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - ibm-US-Marist_University-优选-cloudflare.182682.xyz
-      - ibm-US-Marist_University-优选-joeyblog.net
-      - ibm-US-Marist_University
-      - vm-ws-2564
-      - vl-reality-2564
-      - hy2-2564
-      - tu5-2564
-      - vl-reality-instance-20240228-1524
-      - vm-ws-instance-20240228-1524
       - hy2-instance-20240228-1524
-      - tu5-instance-20240228-1524
-      - vl-reality-instance-20241127-1317
-      - vm-ws-instance-20241127-1317
       - hy2-instance-20241127-1317
-      - tu5-instance-20241127-1317
-      - vl-reality-instance-20241127-1424
-      - vm-ws-instance-20241127-1424
       - hy2-instance-20241127-1424
-      - tu5-instance-20241127-1424
-      - vl-reality-instance-20250520-2213
-      - vm-ws-instance-20250520-2213
       - hy2-instance-20250520-2213
-      - tu5-instance-20250520-2213
-      - xhttpluo250524-ghcdxilb-clone_1
-      - xhttpluo250524-ghcdxilb-clone_2
-      - xhttpluo250524-ghcdxilb_1
-      - xhttpluo250524-ghcdxilb_2
-      - xhttp250524-7d72olmj
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
-      - YGKKK2504-5
-      - YGKKK2504-6
-      - YGKKK2504-7
-      - YGKKK2504-8
-      - YGKKK2504-9
+      - hy2-2564
       - freecloud2504
+      - tu5-instance-20241127-1424
+      - tu5-instance-20250520-2213
+      - tu5-instance-20241127-1317
+      - tu5-instance-20240228-1524
+      - tu5-2564
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 5000
     proxies:
-      - ibm-US-Marist_University-优选-cloudflare.182682.xyz
-      - ibm-US-Marist_University-优选-joeyblog.net
-      - ibm-US-Marist_University
-      - vm-ws-2564
-      - vl-reality-2564
-      - hy2-2564
-      - tu5-2564
-      - vl-reality-instance-20240228-1524
-      - vm-ws-instance-20240228-1524
       - hy2-instance-20240228-1524
-      - tu5-instance-20240228-1524
-      - vl-reality-instance-20241127-1317
-      - vm-ws-instance-20241127-1317
       - hy2-instance-20241127-1317
-      - tu5-instance-20241127-1317
-      - vl-reality-instance-20241127-1424
-      - vm-ws-instance-20241127-1424
       - hy2-instance-20241127-1424
-      - tu5-instance-20241127-1424
-      - vl-reality-instance-20250520-2213
-      - vm-ws-instance-20250520-2213
       - hy2-instance-20250520-2213
-      - tu5-instance-20250520-2213
-      - xhttpluo250524-ghcdxilb-clone_1
-      - xhttpluo250524-ghcdxilb-clone_2
-      - xhttpluo250524-ghcdxilb_1
-      - xhttpluo250524-ghcdxilb_2
-      - xhttp250524-7d72olmj
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
-      - YGKKK2504-5
-      - YGKKK2504-6
-      - YGKKK2504-7
-      - YGKKK2504-8
-      - YGKKK2504-9
+      - hy2-2564
       - freecloud2504
+      - tu5-instance-20241127-1424
+      - tu5-instance-20250520-2213
+      - tu5-instance-20241127-1317
+      - tu5-instance-20240228-1524
+      - tu5-2564
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -661,44 +236,17 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - ibm-US-Marist_University-优选-cloudflare.182682.xyz
-      - ibm-US-Marist_University-优选-joeyblog.net
-      - ibm-US-Marist_University
-      - vm-ws-2564
-      - vl-reality-2564
-      - hy2-2564
-      - tu5-2564
-      - vl-reality-instance-20240228-1524
-      - vm-ws-instance-20240228-1524
       - hy2-instance-20240228-1524
-      - tu5-instance-20240228-1524
-      - vl-reality-instance-20241127-1317
-      - vm-ws-instance-20241127-1317
       - hy2-instance-20241127-1317
-      - tu5-instance-20241127-1317
-      - vl-reality-instance-20241127-1424
-      - vm-ws-instance-20241127-1424
       - hy2-instance-20241127-1424
-      - tu5-instance-20241127-1424
-      - vl-reality-instance-20250520-2213
-      - vm-ws-instance-20250520-2213
       - hy2-instance-20250520-2213
-      - tu5-instance-20250520-2213
-      - xhttpluo250524-ghcdxilb-clone_1
-      - xhttpluo250524-ghcdxilb-clone_2
-      - xhttpluo250524-ghcdxilb_1
-      - xhttpluo250524-ghcdxilb_2
-      - xhttp250524-7d72olmj
-      - YGKKK2504
-      - YGKKK2504-2
-      - YGKKK2504-3
-      - YGKKK2504-4
-      - YGKKK2504-5
-      - YGKKK2504-6
-      - YGKKK2504-7
-      - YGKKK2504-8
-      - YGKKK2504-9
+      - hy2-2564
       - freecloud2504
+      - tu5-instance-20241127-1424
+      - tu5-instance-20250520-2213
+      - tu5-instance-20241127-1317
+      - tu5-instance-20240228-1524
+      - tu5-2564
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
