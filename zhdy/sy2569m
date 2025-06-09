@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-06-09 13:43:18
+# 配置生成日期：2025-06-09 13:53:40
 
 mixed-port: 7890
 allow-lan: false
@@ -355,6 +355,138 @@ proxies:
       headers:
         host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
+  - name: 🇺🇸美国-TCP1
+    type: ss
+    server: zf1.10101251.xyz
+    port: 57591
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇺🇸美国-TCP2
+    type: ss
+    server: zf2.10101251.xyz
+    port: 57591
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇺🇸美国-TCP3
+    type: ss
+    server: zf3.10101251.xyz
+    port: 57591
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇺🇸美国-UDP1
+    type: hysteria2
+    server: us.10101251.xyz
+    port: 3001
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: us.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇺🇸美国-UDP2
+    type: hysteria2
+    server: us.10101251.xyz
+    port: 3002
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: us.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇯🇵日本-TCP1
+    type: ss
+    server: zf1.10101251.xyz
+    port: 41709
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇯🇵日本-TCP2
+    type: ss
+    server: zf2.10101251.xyz
+    port: 41709
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇯🇵日本-TCP3
+    type: ss
+    server: zf3.10101251.xyz
+    port: 41709
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇯🇵日本-UDP1
+    type: hysteria2
+    server: jp.10101251.xyz
+    port: 3012
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: jp.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇯🇵日本-UDP2
+    type: hysteria2
+    server: jp.10101251.xyz
+    port: 3013
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: jp.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇸🇬新加坡-TCP1
+    type: ss
+    server: zf1.10101251.xyz
+    port: 42765
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇸🇬新加坡-TCP2
+    type: ss
+    server: zf2.10101251.xyz
+    port: 42765
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇸🇬新加坡-TCP3
+    type: ss
+    server: zf3.10101251.xyz
+    port: 42765
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇸🇬新加坡-UDP1
+    type: hysteria2
+    server: sg.10101251.xyz
+    port: 3001
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: sg.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇸🇬新加坡-UDP2
+    type: hysteria2
+    server: sg.10101251.xyz
+    port: 3002
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: sg.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -385,6 +517,21 @@ proxy-groups:
       - YGKKK2504-2
       - YGKKK2504-3
       - YGKKK2504-4
+      - 🇺🇸美国-TCP1
+      - 🇺🇸美国-TCP2
+      - 🇺🇸美国-TCP3
+      - 🇺🇸美国-UDP1
+      - 🇺🇸美国-UDP2
+      - 🇯🇵日本-TCP1
+      - 🇯🇵日本-TCP2
+      - 🇯🇵日本-TCP3
+      - 🇯🇵日本-UDP1
+      - 🇯🇵日本-UDP2
+      - 🇸🇬新加坡-TCP1
+      - 🇸🇬新加坡-TCP2
+      - 🇸🇬新加坡-TCP3
+      - 🇸🇬新加坡-UDP1
+      - 🇸🇬新加坡-UDP2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -415,6 +562,21 @@ proxy-groups:
       - YGKKK2504-2
       - YGKKK2504-3
       - YGKKK2504-4
+      - 🇺🇸美国-TCP1
+      - 🇺🇸美国-TCP2
+      - 🇺🇸美国-TCP3
+      - 🇺🇸美国-UDP1
+      - 🇺🇸美国-UDP2
+      - 🇯🇵日本-TCP1
+      - 🇯🇵日本-TCP2
+      - 🇯🇵日本-TCP3
+      - 🇯🇵日本-UDP1
+      - 🇯🇵日本-UDP2
+      - 🇸🇬新加坡-TCP1
+      - 🇸🇬新加坡-TCP2
+      - 🇸🇬新加坡-TCP3
+      - 🇸🇬新加坡-UDP1
+      - 🇸🇬新加坡-UDP2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -456,6 +618,21 @@ proxy-groups:
       - YGKKK2504-2
       - YGKKK2504-3
       - YGKKK2504-4
+      - 🇺🇸美国-TCP1
+      - 🇺🇸美国-TCP2
+      - 🇺🇸美国-TCP3
+      - 🇺🇸美国-UDP1
+      - 🇺🇸美国-UDP2
+      - 🇯🇵日本-TCP1
+      - 🇯🇵日本-TCP2
+      - 🇯🇵日本-TCP3
+      - 🇯🇵日本-UDP1
+      - 🇯🇵日本-UDP2
+      - 🇸🇬新加坡-TCP1
+      - 🇸🇬新加坡-TCP2
+      - 🇸🇬新加坡-TCP3
+      - 🇸🇬新加坡-UDP1
+      - 🇸🇬新加坡-UDP2
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
