@@ -108,7 +108,22 @@
         "YGKKK2504",
         "YGKKK2504-2",
         "YGKKK2504-3",
-        "YGKKK2504-4"
+        "YGKKK2504-4",
+        "🇺🇸美国-TCP1",
+        "🇺🇸美国-TCP2",
+        "🇺🇸美国-TCP3",
+        "🇺🇸美国-UDP1",
+        "🇺🇸美国-UDP2",
+        "🇯🇵日本-TCP1",
+        "🇯🇵日本-TCP2",
+        "🇯🇵日本-TCP3",
+        "🇯🇵日本-UDP1",
+        "🇯🇵日本-UDP2",
+        "🇸🇬新加坡-TCP1",
+        "🇸🇬新加坡-TCP2",
+        "🇸🇬新加坡-TCP3",
+        "🇸🇬新加坡-UDP1",
+        "🇸🇬新加坡-UDP2"
       ]
     },
     {
@@ -138,7 +153,22 @@
         "YGKKK2504",
         "YGKKK2504-2",
         "YGKKK2504-3",
-        "YGKKK2504-4"
+        "YGKKK2504-4",
+        "🇺🇸美国-TCP1",
+        "🇺🇸美国-TCP2",
+        "🇺🇸美国-TCP3",
+        "🇺🇸美国-UDP1",
+        "🇺🇸美国-UDP2",
+        "🇯🇵日本-TCP1",
+        "🇯🇵日本-TCP2",
+        "🇯🇵日本-TCP3",
+        "🇯🇵日本-UDP1",
+        "🇯🇵日本-UDP2",
+        "🇸🇬新加坡-TCP1",
+        "🇸🇬新加坡-TCP2",
+        "🇸🇬新加坡-TCP3",
+        "🇸🇬新加坡-UDP1",
+        "🇸🇬新加坡-UDP2"
       ],
       "url": "http://www.gstatic.com/generate_204",
       "interval": "10m",
@@ -532,6 +562,150 @@
         "headers": {
           "host": "gentle-star-853b.xiaodiaoke56789.workers.dev"
         }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国-TCP1",
+      "server": "zf1.10101251.xyz",
+      "server_port": 57591,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国-TCP2",
+      "server": "zf2.10101251.xyz",
+      "server_port": 57591,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇺🇸美国-TCP3",
+      "server": "zf3.10101251.xyz",
+      "server_port": 57591,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸美国-UDP1",
+      "server": "us.10101251.xyz",
+      "server_port": 3001,
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a",
+      "tls": {
+        "enabled": true,
+        "server_name": "us.10101251.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇺🇸美国-UDP2",
+      "server": "us.10101251.xyz",
+      "server_port": 3002,
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a",
+      "tls": {
+        "enabled": true,
+        "server_name": "us.10101251.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本-TCP1",
+      "server": "zf1.10101251.xyz",
+      "server_port": 41709,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本-TCP2",
+      "server": "zf2.10101251.xyz",
+      "server_port": 41709,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵日本-TCP3",
+      "server": "zf3.10101251.xyz",
+      "server_port": 41709,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵日本-UDP1",
+      "server": "jp.10101251.xyz",
+      "server_port": 3012,
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.10101251.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇯🇵日本-UDP2",
+      "server": "jp.10101251.xyz",
+      "server_port": 3013,
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a",
+      "tls": {
+        "enabled": true,
+        "server_name": "jp.10101251.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡-TCP1",
+      "server": "zf1.10101251.xyz",
+      "server_port": 42765,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡-TCP2",
+      "server": "zf2.10101251.xyz",
+      "server_port": 42765,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇬新加坡-TCP3",
+      "server": "zf3.10101251.xyz",
+      "server_port": 42765,
+      "method": "aes-256-gcm",
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬新加坡-UDP1",
+      "server": "sg.10101251.xyz",
+      "server_port": 3001,
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg.10101251.xyz",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇬新加坡-UDP2",
+      "server": "sg.10101251.xyz",
+      "server_port": 3002,
+      "password": "f49722c3-3fe4-4372-9265-56380284d62a",
+      "tls": {
+        "enabled": true,
+        "server_name": "sg.10101251.xyz",
+        "insecure": false
       }
     }
   ],
