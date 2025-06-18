@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-06-18 09:44:00
+# 配置生成日期：2025-06-18 10:07:03
 
 mixed-port: 7890
 allow-lan: false
@@ -62,7 +62,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
   - name: hy2-instance-20240228-1524
     type: hysteria2
     server: 158.101.28.51
@@ -75,7 +74,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
   - name: hy2-instance-20241127-1317
     type: hysteria2
     server: 129.153.126.254
@@ -88,7 +86,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
   - name: hy2-instance-20241127-1424
     type: hysteria2
     server: 129.153.207.7
@@ -101,7 +98,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
   - name: hy2-instance-20250520-2213
     type: hysteria2
     server: 129.153.207.22
@@ -114,7 +110,6 @@ proxies:
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
-    udp: true
   - name: tu5-instance-20241127-1424
     type: tuic
     server: 129.153.207.7
@@ -127,7 +122,6 @@ proxies:
       - h3
     skip-cert-verify: true
     ip-version: dual
-    udp: true
     congestion-controller: bbr
   - name: tu5-instance-20250520-2213
     type: tuic
@@ -141,7 +135,6 @@ proxies:
       - h3
     skip-cert-verify: true
     ip-version: dual
-    udp: true
     congestion-controller: bbr
   - name: tu5-instance-20241127-1317
     type: tuic
@@ -155,7 +148,6 @@ proxies:
       - h3
     skip-cert-verify: true
     ip-version: dual
-    udp: true
     congestion-controller: bbr
   - name: tu5-instance-20240228-1524
     type: tuic
@@ -169,35 +161,12 @@ proxies:
       - h3
     skip-cert-verify: true
     ip-version: dual
-    udp: true
     congestion-controller: bbr
-  - name: vm-ws-instance-20250520-2213_1
-    type: vmess
-    server: www.wto.org
-    port: 8880
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-ws-instance-20250520-2213_2
-    type: vmess
-    server: www.wto.org
-    port: 8880
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: false
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vl-reality-instance-20250520-2213_1
+  - name: vl-reality-instance-20240228-1524
     type: vless
-    server: 129.153.207.22
-    port: 65238
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    server: 158.101.28.51
+    port: 26692
+    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
     network: tcp
     tls: true
     servername: www.yahoo.com
@@ -205,175 +174,18 @@ proxies:
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
-      public-key: W8koBeSHEoPIC9mtDI1BB0I9N88ycEyqs14A5jbaP1I
-      short-id: 8da51536
+      public-key: wO9F-op0VS-c9_i0XAxV0xb8aW4JcIed7cvHr5QLKQA
+      short-id: 2ed180ed
     ip-version: dual
     udp: true
-  - name: vm-argo-instance-20250520-2213_1
+  - name: vm-ws-instance-20240228-1524
     type: vmess
-    server: icook.hk
-    port: 8443
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: crm-cow-titles-practitioner.trycloudflare.com
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-argo-instance-20250520-2213_2
-    type: vmess
-    server: icook.hk
-    port: 8443
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-ws-instance-20250520-2213_3
-    type: vmess
-    server: www.wto.org
-    port: 8880
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    server: 158.101.28.51
+    port: 8080
+    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
     network: ws
     tls: false
     ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-argo-instance-20250520-2213-clone
-    type: vmess
-    server: 104.16.0.0
-    port: 2053
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-argo-instance-3
-    type: vmess
-    server: 104.17.0.0
-    port: 2083
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-argo-instance-3-clone
-    type: vmess
-    server: 104.18.0.0
-    port: 2096
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-argo-instanc4
-    type: vmess
-    server: 104.19.0.0
-    port: 2053
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-argo-instanc4-clone
-    type: vmess
-    server: 162.159.0.0
-    port: 2053
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-argo-instanc4-clone-clone
-    type: vmess
-    server: 104.16.0.0
-    port: 2087
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-aone-cln66e
-    type: vmess
-    server: 104.26.0.0
-    port: 8443
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-aone-cln66e-clone
-    type: vmess
-    server: 104.24.0.0
-    port: 443
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-aone-cln66e-clone-clone
-    type: vmess
-    server: 172.67.0.0
-    port: 443
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
-    alterId: 0
-    cipher: auto
-  - name: vm-aone-cln66e-clone-clone-clone
-    type: vmess
-    server: 104.17.0.0
-    port: 443
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: ws
-    tls: true
-    servername: ygkkk256122.718933.xyz
-    skip-cert-verify: true
-    ip-version: dual
-    udp: true
     alterId: 0
     cipher: auto
   - name: vl-reality-instance-20241127-1317
@@ -392,38 +204,16 @@ proxies:
       short-id: 9588288b
     ip-version: dual
     udp: true
-  - name: vl-reality-instance-20240228-1524
-    type: vless
-    server: 158.101.28.51
-    port: 26692
-    uuid: 8cd654ed-7b2d-4503-868b-b9eb74bc0379
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: wO9F-op0VS-c9_i0XAxV0xb8aW4JcIed7cvHr5QLKQA
-      short-id: 2ed180ed
+  - name: vm-ws-instance-20241127-1317
+    type: vmess
+    server: 129.153.126.254
+    port: 2095
+    uuid: 337644fd-fb59-445a-9a65-33a5a3163fa1
+    network: ws
+    tls: false
     ip-version: dual
-    udp: true
-  - name: vl-reality-instance-20250520-2213_2
-    type: vless
-    server: 129.153.207.22
-    port: 65238
-    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
-    network: tcp
-    tls: true
-    servername: www.yahoo.com
-    flow: xtls-rprx-vision
-    skip-cert-verify: true
-    client-fingerprint: chrome
-    reality-opts:
-      public-key: W8koBeSHEoPIC9mtDI1BB0I9N88ycEyqs14A5jbaP1I
-      short-id: 8da51536
-    ip-version: dual
-    udp: true
+    alterId: 0
+    cipher: auto
   - name: vl-reality-instance-20241127-1424
     type: vless
     server: 129.153.207.7
@@ -440,21 +230,42 @@ proxies:
       short-id: e9f6c3fe
     ip-version: dual
     udp: true
-  - name: xhttp250524-7d72olmj
+  - name: vm-ws-instance-20241127-1424
+    type: vmess
+    server: 129.153.207.7
+    port: 2095
+    uuid: 3d2131ea-cb49-4450-9e14-458afe3f5711
+    network: ws
+    tls: false
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: vl-reality-instance-20250520-2213
     type: vless
     server: 129.153.207.22
-    port: 443
-    uuid: 85cc706e-10a8-4b97-8ff1-9d82ab73537e
-    network: xhttp
+    port: 65238
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: tcp
     tls: true
-    servername: yahoo.com
+    servername: www.yahoo.com
+    flow: xtls-rprx-vision
     skip-cert-verify: true
     client-fingerprint: chrome
     reality-opts:
-      public-key: YiiFQIbjzpPwVt7JIuKwQrYJu6Z6dbKqa_wEsxeYMng
-      short-id: b46a
+      public-key: W8koBeSHEoPIC9mtDI1BB0I9N88ycEyqs14A5jbaP1I
+      short-id: 8da51536
     ip-version: dual
     udp: true
+  - name: vm-ws-instance-20250520-2213
+    type: vmess
+    server: 129.153.207.22
+    port: 8880
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: ws
+    tls: false
+    ip-version: dual
+    alterId: 0
+    cipher: auto
   - name: YGKKK2504
     type: vless
     server: 104.20.0.0
@@ -467,11 +278,24 @@ proxies:
       headers:
         host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
-    udp: true
-  - name: YGKKK2504-2
+  - name: YGKKK2504-3
     type: vless
-    server: 104.22.0.0
-    port: 8880
+    server: 104.19.0.0
+    port: 80
+    uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
+    network: ws
+    tls: true
+    servername: gentle-star-853b.xiaodiaoke56789.workers.dev
+    skip-cert-verify: true
+    ws-opts:
+      path: /
+      headers:
+        host: gentle-star-853b.xiaodiaoke56789.workers.dev
+    ip-version: dual
+  - name: YGKKK2504-4
+    type: vless
+    server: 172.67.0.0
+    port: 2052
     uuid: 4da07507-3f17-4499-9c05-ea1c358d1b28
     network: ws
     tls: false
@@ -480,18 +304,210 @@ proxies:
       headers:
         host: gentle-star-853b.xiaodiaoke56789.workers.dev
     ip-version: dual
-    udp: true
-  - name: freecloud2504
-    type: hysteria2
-    server: 2604:abc0:103:415:a1::2c7
-    port: 40443
+  - name: vm-argo-instance-20250520-2213
+    type: vmess
+    server: icook.hk
+    port: 8443
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: ws
     tls: true
-    password: yrpQIPpOGpSlSqzR7hmWb99p
-    sni: bing.com
+    servername: crm-cow-titles-practitioner.trycloudflare.com
     skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: vm-argo-instance-3
+    type: vmess
+    server: 104.17.0.0
+    port: 2083
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: ws
+    tls: true
+    servername: ygkkk256122.718933.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: vm-argo-instanc4
+    type: vmess
+    server: 104.19.0.0
+    port: 2053
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: ws
+    tls: true
+    servername: ygkkk256122.718933.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: vm-argo-instanc4-clone-clone
+    type: vmess
+    server: 104.16.0.0
+    port: 2087
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: ws
+    tls: true
+    servername: ygkkk256122.718933.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: vm-aone-cln66e-clone
+    type: vmess
+    server: 104.24.0.0
+    port: 443
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: ws
+    tls: true
+    servername: ygkkk256122.718933.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: vm-aone-cln66e-clone-clone-clone
+    type: vmess
+    server: 104.17.0.0
+    port: 443
+    uuid: 34d398e1-add5-4f00-bdc6-2744fa3ad9f3
+    network: ws
+    tls: true
+    servername: ygkkk256122.718933.xyz
+    skip-cert-verify: true
+    ip-version: dual
+    alterId: 0
+    cipher: auto
+  - name: 🇸🇬新加坡-TCP1
+    type: ss
+    server: zf1.10101251.xyz
+    port: 42765
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇸🇬新加坡-TCP2
+    type: ss
+    server: zf2.10101251.xyz
+    port: 42765
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇸🇬新加坡-TCP3
+    type: ss
+    server: zf3.10101251.xyz
+    port: 42765
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇸🇬新加坡-UDP1
+    type: hysteria2
+    server: sg.10101251.xyz
+    port: 3001
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: sg.10101251.xyz
+    skip-cert-verify: false
     fast-open: false
     ip-version: dual
-    udp: true
+  - name: 🇸🇬新加坡-UDP2
+    type: hysteria2
+    server: sg.10101251.xyz
+    port: 3002
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: sg.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇺🇸美国-TCP1
+    type: ss
+    server: zf1.10101251.xyz
+    port: 57591
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇺🇸美国-TCP2
+    type: ss
+    server: zf2.10101251.xyz
+    port: 57591
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇺🇸美国-TCP3
+    type: ss
+    server: zf3.10101251.xyz
+    port: 57591
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇺🇸美国-UDP1
+    type: hysteria2
+    server: us.10101251.xyz
+    port: 3001
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: us.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇺🇸美国-UDP2
+    type: hysteria2
+    server: us.10101251.xyz
+    port: 3002
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: us.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇯🇵日本-TCP1
+    type: ss
+    server: zf1.10101251.xyz
+    port: 41709
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇯🇵日本-TCP2
+    type: ss
+    server: zf2.10101251.xyz
+    port: 41709
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇯🇵日本-TCP3
+    type: ss
+    server: zf3.10101251.xyz
+    port: 41709
+    tls: false
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    ip-version: dual
+    cipher: aes-256-gcm
+  - name: 🇯🇵日本-UDP1
+    type: hysteria2
+    server: jp.10101251.xyz
+    port: 3012
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: jp.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
+  - name: 🇯🇵日本-UDP2
+    type: hysteria2
+    server: jp.10101251.xyz
+    port: 3013
+    tls: true
+    password: f49722c3-3fe4-4372-9265-56380284d62a
+    sni: jp.10101251.xyz
+    skip-cert-verify: false
+    fast-open: false
+    ip-version: dual
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -507,30 +523,38 @@ proxy-groups:
       - tu5-instance-20250520-2213
       - tu5-instance-20241127-1317
       - tu5-instance-20240228-1524
-      - vm-ws-instance-20250520-2213_1
-      - vm-ws-instance-20250520-2213_2
-      - vl-reality-instance-20250520-2213_1
-      - vm-argo-instance-20250520-2213_1
-      - vm-argo-instance-20250520-2213_2
-      - vm-ws-instance-20250520-2213_3
-      - vm-argo-instance-20250520-2213-clone
-      - vm-argo-instance-3
-      - vm-argo-instance-3-clone
-      - vm-argo-instanc4
-      - vm-argo-instanc4-clone
-      - vm-argo-instanc4-clone-clone
-      - vm-aone-cln66e
-      - vm-aone-cln66e-clone
-      - vm-aone-cln66e-clone-clone
-      - vm-aone-cln66e-clone-clone-clone
-      - vl-reality-instance-20241127-1317
       - vl-reality-instance-20240228-1524
-      - vl-reality-instance-20250520-2213_2
+      - vm-ws-instance-20240228-1524
+      - vl-reality-instance-20241127-1317
+      - vm-ws-instance-20241127-1317
       - vl-reality-instance-20241127-1424
-      - xhttp250524-7d72olmj
+      - vm-ws-instance-20241127-1424
+      - vl-reality-instance-20250520-2213
+      - vm-ws-instance-20250520-2213
       - YGKKK2504
-      - YGKKK2504-2
-      - freecloud2504
+      - YGKKK2504-3
+      - YGKKK2504-4
+      - vm-argo-instance-20250520-2213
+      - vm-argo-instance-3
+      - vm-argo-instanc4
+      - vm-argo-instanc4-clone-clone
+      - vm-aone-cln66e-clone
+      - vm-aone-cln66e-clone-clone-clone
+      - 🇸🇬新加坡-TCP1
+      - 🇸🇬新加坡-TCP2
+      - 🇸🇬新加坡-TCP3
+      - 🇸🇬新加坡-UDP1
+      - 🇸🇬新加坡-UDP2
+      - 🇺🇸美国-TCP1
+      - 🇺🇸美国-TCP2
+      - 🇺🇸美国-TCP3
+      - 🇺🇸美国-UDP1
+      - 🇺🇸美国-UDP2
+      - 🇯🇵日本-TCP1
+      - 🇯🇵日本-TCP2
+      - 🇯🇵日本-TCP3
+      - 🇯🇵日本-UDP1
+      - 🇯🇵日本-UDP2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -546,30 +570,38 @@ proxy-groups:
       - tu5-instance-20250520-2213
       - tu5-instance-20241127-1317
       - tu5-instance-20240228-1524
-      - vm-ws-instance-20250520-2213_1
-      - vm-ws-instance-20250520-2213_2
-      - vl-reality-instance-20250520-2213_1
-      - vm-argo-instance-20250520-2213_1
-      - vm-argo-instance-20250520-2213_2
-      - vm-ws-instance-20250520-2213_3
-      - vm-argo-instance-20250520-2213-clone
-      - vm-argo-instance-3
-      - vm-argo-instance-3-clone
-      - vm-argo-instanc4
-      - vm-argo-instanc4-clone
-      - vm-argo-instanc4-clone-clone
-      - vm-aone-cln66e
-      - vm-aone-cln66e-clone
-      - vm-aone-cln66e-clone-clone
-      - vm-aone-cln66e-clone-clone-clone
-      - vl-reality-instance-20241127-1317
       - vl-reality-instance-20240228-1524
-      - vl-reality-instance-20250520-2213_2
+      - vm-ws-instance-20240228-1524
+      - vl-reality-instance-20241127-1317
+      - vm-ws-instance-20241127-1317
       - vl-reality-instance-20241127-1424
-      - xhttp250524-7d72olmj
+      - vm-ws-instance-20241127-1424
+      - vl-reality-instance-20250520-2213
+      - vm-ws-instance-20250520-2213
       - YGKKK2504
-      - YGKKK2504-2
-      - freecloud2504
+      - YGKKK2504-3
+      - YGKKK2504-4
+      - vm-argo-instance-20250520-2213
+      - vm-argo-instance-3
+      - vm-argo-instanc4
+      - vm-argo-instanc4-clone-clone
+      - vm-aone-cln66e-clone
+      - vm-aone-cln66e-clone-clone-clone
+      - 🇸🇬新加坡-TCP1
+      - 🇸🇬新加坡-TCP2
+      - 🇸🇬新加坡-TCP3
+      - 🇸🇬新加坡-UDP1
+      - 🇸🇬新加坡-UDP2
+      - 🇺🇸美国-TCP1
+      - 🇺🇸美国-TCP2
+      - 🇺🇸美国-TCP3
+      - 🇺🇸美国-UDP1
+      - 🇺🇸美国-UDP2
+      - 🇯🇵日本-TCP1
+      - 🇯🇵日本-TCP2
+      - 🇯🇵日本-TCP3
+      - 🇯🇵日本-UDP1
+      - 🇯🇵日本-UDP2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -596,30 +628,38 @@ proxy-groups:
       - tu5-instance-20250520-2213
       - tu5-instance-20241127-1317
       - tu5-instance-20240228-1524
-      - vm-ws-instance-20250520-2213_1
-      - vm-ws-instance-20250520-2213_2
-      - vl-reality-instance-20250520-2213_1
-      - vm-argo-instance-20250520-2213_1
-      - vm-argo-instance-20250520-2213_2
-      - vm-ws-instance-20250520-2213_3
-      - vm-argo-instance-20250520-2213-clone
-      - vm-argo-instance-3
-      - vm-argo-instance-3-clone
-      - vm-argo-instanc4
-      - vm-argo-instanc4-clone
-      - vm-argo-instanc4-clone-clone
-      - vm-aone-cln66e
-      - vm-aone-cln66e-clone
-      - vm-aone-cln66e-clone-clone
-      - vm-aone-cln66e-clone-clone-clone
-      - vl-reality-instance-20241127-1317
       - vl-reality-instance-20240228-1524
-      - vl-reality-instance-20250520-2213_2
+      - vm-ws-instance-20240228-1524
+      - vl-reality-instance-20241127-1317
+      - vm-ws-instance-20241127-1317
       - vl-reality-instance-20241127-1424
-      - xhttp250524-7d72olmj
+      - vm-ws-instance-20241127-1424
+      - vl-reality-instance-20250520-2213
+      - vm-ws-instance-20250520-2213
       - YGKKK2504
-      - YGKKK2504-2
-      - freecloud2504
+      - YGKKK2504-3
+      - YGKKK2504-4
+      - vm-argo-instance-20250520-2213
+      - vm-argo-instance-3
+      - vm-argo-instanc4
+      - vm-argo-instanc4-clone-clone
+      - vm-aone-cln66e-clone
+      - vm-aone-cln66e-clone-clone-clone
+      - 🇸🇬新加坡-TCP1
+      - 🇸🇬新加坡-TCP2
+      - 🇸🇬新加坡-TCP3
+      - 🇸🇬新加坡-UDP1
+      - 🇸🇬新加坡-UDP2
+      - 🇺🇸美国-TCP1
+      - 🇺🇸美国-TCP2
+      - 🇺🇸美国-TCP3
+      - 🇺🇸美国-UDP1
+      - 🇺🇸美国-UDP2
+      - 🇯🇵日本-TCP1
+      - 🇯🇵日本-TCP2
+      - 🇯🇵日本-TCP3
+      - 🇯🇵日本-UDP1
+      - 🇯🇵日本-UDP2
 rules:
 # 本地/局域网地址
 # 参考：https://en.wikipedia.org/wiki/Reserved_IP_addresses
