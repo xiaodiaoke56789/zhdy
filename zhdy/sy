@@ -1,6 +1,6 @@
 # 模版名称：ACL4SSR_Mini.ini
 # 模版最后更新日期：2025/02/12 01:49:29
-# 配置生成日期：2025-06-18 10:07:03
+# 配置生成日期：2025-06-19 14:08:24
 
 mixed-port: 7890
 allow-lan: false
@@ -50,15 +50,13 @@ tun:
     - 1.1.1.1
     - 1.0.0.1
 proxies:
-  - name: hy2-2564
+  - name: Hysteria2-misaka
     type: hysteria2
     server: 142.91.104.30
-    port: 27976
+    port: 10001
     tls: true
-    password: 38f0477c-a1d5-420c-ae56-b17d978bb4c0
+    password: bcfb6224
     sni: www.bing.com
-    alpn:
-      - h3
     skip-cert-verify: true
     fast-open: false
     ip-version: dual
@@ -514,7 +512,7 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - hy2-2564
+      - Hysteria2-misaka
       - hy2-instance-20240228-1524
       - hy2-instance-20241127-1317
       - hy2-instance-20241127-1424
@@ -561,7 +559,7 @@ proxy-groups:
     interval: 300
     tolerance: 5000
     proxies:
-      - hy2-2564
+      - Hysteria2-misaka
       - hy2-instance-20240228-1524
       - hy2-instance-20241127-1317
       - hy2-instance-20241127-1424
@@ -619,7 +617,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - hy2-2564
+      - Hysteria2-misaka
       - hy2-instance-20240228-1524
       - hy2-instance-20241127-1317
       - hy2-instance-20241127-1424
